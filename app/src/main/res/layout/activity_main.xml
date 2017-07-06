@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mh.cb_sports_festival.MainActivity"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="368dp"
+        android:layout_height="115dp"
+        android:layout_above="@+id/gridLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gridLayout3"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp"></android.support.v4.view.ViewPager>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:background="#00000000"
+        android:onClick="onButton1Clicked"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager"
+        app:srcCompat="@drawable/stardium" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:background="#00000000"
+        app:layout_constraintRight_toLeftOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager"
+        app:srcCompat="@drawable/sports"
+        app:layout_constraintLeft_toRightOf="@+id/imageButton1"
+        android:layout_marginLeft="5dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:background="#00000000"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager"
+        app:srcCompat="@drawable/schedule" />
+
+</android.support.constraint.ConstraintLayout>
