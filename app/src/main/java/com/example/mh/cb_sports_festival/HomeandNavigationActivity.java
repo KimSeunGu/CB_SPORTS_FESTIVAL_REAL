@@ -1,4 +1,4 @@
-package com.example.mh.cb_sports_festival;
+/*package com.example.mh.cb_sports_festival;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -97,3 +97,4 @@ public class HomeandNavigationActivity extends AppCompatActivity
         return true;
     }
 }
+*/
