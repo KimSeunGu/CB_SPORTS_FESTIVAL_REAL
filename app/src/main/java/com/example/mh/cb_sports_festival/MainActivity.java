@@ -43,13 +43,16 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-
     public void onButton1Clicked(View V){ //대회 소개 페이지로 넘어감
         Intent intent = new Intent(this, TabActivity.class);
         startActivity(intent);
     }
     public void onButton5Clicked(View V) { //맛집 숙박 사이트(충북 나드리)로 넘어감
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://tour.chungbuk.go.kr/home/sub.php?menukey=225"));
+        startActivity(intent);
+    }
+    public void onButtonHomeClicked(View V) { //맛집 숙박 사이트(충북 나드리)로 넘어감
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
